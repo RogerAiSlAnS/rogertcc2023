@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "853679583477",
+    "project_id": "tccroger-43c2f",
+    "storage_bucket": "tccroger-43c2f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853679583477:android:686cc6cf957312025dd5bc",
+        "android_client_info": {
+          "package_name": "com.tccroger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853679583477-4jtlm8rkllam6g5tg10s08kf75pqbr1j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtjxMKOHGNOGCJx_5qHZ4NtMOfTJvoSSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853679583477-4jtlm8rkllam6g5tg10s08kf75pqbr1j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
