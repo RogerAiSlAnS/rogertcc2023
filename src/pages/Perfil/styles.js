@@ -7,7 +7,7 @@ export const Container = styled.View`
 `;
 
 export const UploadButton = styled.TouchableOpacity`
-  margin-top: 20%;
+  margin-top: 10%;
   background-color: #fff;
   width: 165px;
   height: 165px;
@@ -42,7 +42,7 @@ export const Name = styled.Text`
 `;
 
 export const Email = styled.Text`
-  margin-top: 9px;
+  margin-top: 10px;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -52,7 +52,7 @@ export const Email = styled.Text`
 `;
 
 export const Escola = styled.Text`
-  margin-top: 9px;
+  margin-top: 10px;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -62,7 +62,7 @@ export const Escola = styled.Text`
 `;
 
 export const Cidade = styled.Text`
-  margin-top: 9px;
+  margin-top: 10px;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -72,10 +72,10 @@ export const Cidade = styled.Text`
 `;
 
 export const MatriculaCod = styled.Text`
-  margin-top: 9px;
+  margin-top: 5px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 20px;
   color: #fff;
   font-style: italic;
@@ -86,7 +86,7 @@ export const Button = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
   background-color: ${props => props.bg};
-  width: 80%;
+  width: 90%;
   height: 45px;
   border-radius: 5px;
 `;
@@ -99,7 +99,7 @@ export const ButtonText = styled.Text`
 
 export const ModalContainer = styled.KeyboardAvoidingView`
   width: 100%;
-  height: 70%;
+  height: 60%;
   background-color: #fff;
   justify-content: center;
   align-items: center;
