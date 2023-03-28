@@ -5,16 +5,14 @@ import Header from '../../components/Header';
 import {Container} from './styles';
 
 const initialState = {
-  react: false,
-  next: false,
-  java: false,
-  angular: false,
+  resp1: false,
+  resp2: false,
+  resp3: false,
+  resp4: false,
 };
 
 const Responder = () => {
   const [state, setState] = useState(initialState);
-  const [toggleButton, setToggleButton] = useState(false);
-
   return (
     <Container>
       <Header/>
@@ -27,8 +25,8 @@ const Responder = () => {
           <CheckBox
             tintColors={{false: '#f5f5f5', true: '#f5f5f5'}}
             disabled={false}
-            value={state.react}
-            onValueChange={value => setState({...state, react: value})}
+            value={state.resp1}
+            onValueChange={value => setState({...state, resp1: value})}
           />
           <Text style={styles.text}>Gerenciar Pessoas</Text>
         </View>
@@ -37,8 +35,8 @@ const Responder = () => {
           <CheckBox
             tintColors={{false: '#f5f5f5', true: '#f5f5f5'}}
             disabled={false}
-            value={state.next}
-            onValueChange={value => setState({...state, next: value})}
+            value={state.resp2}
+            onValueChange={value => setState({...state, resp2: value})}
           />
           <Text style={styles.text}>Empreender</Text>
         </View>
@@ -47,8 +45,8 @@ const Responder = () => {
           <CheckBox
             tintColors={{false: '#f5f5f5', true: '#f5f5f5'}}
             disabled={false}
-            value={state.java}
-            onValueChange={value => setState({...state, java: value})}
+            value={state.resp3}
+            onValueChange={value => setState({...state, resp3: value})}
           />
           <Text style={styles.text}>Atividade no campo</Text>
         </View>
@@ -57,30 +55,14 @@ const Responder = () => {
           <CheckBox
             tintColors={{false: '#f5f5f5', true: '#f5f5f5'}}
             disabled={false}
-            value={state.angular}
-            onValueChange={value => setState({...state, angular: value})}
+            value={state.resp4}
+            onValueChange={value => setState({...state, resp4: value})}
           />
           <Text style={styles.text}>Coisas que envolvam a natureza</Text>
         </View>
 
         <View style={styles.btn}>
-          <Button
-            title="Save"
-            onPress={() => setToggleButton(toggleButton => !toggleButton)}
-          />
-          {toggleButton > 0 && (
-            <View style={styles.resultContainer}>
-              {Object.entries(state).map(([key, value]) => {
-                return (
-                  value && (
-                    <View key={key} style={{paddingHorizontal: 5}}>
-                      <Text style={styles.text}>{key}</Text>
-                    </View>
-                  )
-                );
-              })}
-            </View>
-          )}
+          <Button title="Próximo"/>
         </View>
       </View>
     </Container>
@@ -112,6 +94,7 @@ const styles = StyleSheet.create({
     width: '50%',
     alignSelf: 'center',
     alignItems: 'center',
+    colorButton: '#f5f5f5',
   },
   resultContainer: {
     flexDirection: 'row',
