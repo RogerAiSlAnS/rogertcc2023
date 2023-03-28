@@ -15,10 +15,11 @@ const Responder = () => {
   const [state, setState] = useState(initialState);
   return (
     <Container>
-      <Header/>
+      <Header />
       <View style={styles.container}>
         <Text style={styles.textTitulo}>
-          Selecione as atividades que você gostaria que fizesse parte do seu trabalho:
+          Selecione as atividades que você gostaria que fizesse parte do seu
+          trabalho:
         </Text>
 
         <View style={styles.row}>
@@ -62,7 +63,7 @@ const Responder = () => {
         </View>
 
         <View style={styles.btn}>
-          <Button title="Próximo"/>
+          <Button title="Próximo" />
         </View>
       </View>
     </Container>
@@ -87,7 +88,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 15,
-    color:'#f5f5f5',
+    color: '#f5f5f5',
   },
   btn: {
     top: 50,
